@@ -1,0 +1,22 @@
+.devcon-footer {
+	background-color: #000418;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	color: rgba(255, 255, 255, 0.7);
+	padding: 2.5rem clamp(1rem, 5vw, 4rem);
+}
+
+.devcon-footer__logo {
+	height: 1.75rem;
+	margin-bottom: 1.25rem;
+	width: auto;
+}
+
+.devcon-footer__privacy,
+.devcon-footer__built {
+	font-size: 0.9375rem;
+	margin: 0 0 0.35rem;
+}
+
+.devcon-footer__built {
+	color: rgba(255, 255, 255, 0.45);
+}

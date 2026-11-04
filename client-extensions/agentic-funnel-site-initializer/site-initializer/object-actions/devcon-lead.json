@@ -1,0 +1,35 @@
+{
+	"object-actions": [
+		{
+			"active": true,
+			"conditionExpression": "triageStatus == \"new\"",
+			"errorMessage": {
+				"en_US": "Lead triage could not be started. The lead was saved; retry the Triage Lead action from the lead record."
+			},
+			"externalReferenceCode": "DEVCON_LEAD_TRIAGE",
+			"label": {
+				"en_US": "Triage Lead"
+			},
+			"name": "triageLead",
+			"objectActionExecutorKey": "function#agentic-funnel-etc-object-action-triage-lead",
+			"objectActionTriggerKey": "onAfterAdd",
+			"parameters": {}
+		},
+		{
+			"active": true,
+			"conditionExpression": "triageStatus == \"qualified\"",
+			"errorMessage": {
+				"en_US": "The channel could not be opened. The qualification was recorded; retry the Open Channel action from the lead record."
+			},
+			"externalReferenceCode": "DEVCON_LEAD_OPEN_CHANNEL",
+			"label": {
+				"en_US": "Open Channel"
+			},
+			"name": "openChannel",
+			"objectActionExecutorKey": "function#agentic-funnel-etc-object-action-open-channel",
+			"objectActionTriggerKey": "onAfterUpdate",
+			"parameters": {}
+		}
+	],
+	"objectDefinitionId": "[$OBJECT_DEFINITION_ID:DevconLead$]"
+}

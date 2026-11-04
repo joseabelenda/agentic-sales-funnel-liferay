@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"description": "Scores a submitted lead against the ideal customer profile and returns the segment, fit score, confidence, rationale and whether to reach out.",
+	"externalReferenceCode": "DEVCON_LEAD_CLASSIFIER",
+	"inputVariables": "icpDefinition,leadJSON,leadReference",
+	"outputVariable": "classification",
+	"title_i18n": {
+		"en_US": "DEVCON Lead Classifier"
+	},
+	"workflowDefinitionName": "DEVCON Lead Classifier"
+}

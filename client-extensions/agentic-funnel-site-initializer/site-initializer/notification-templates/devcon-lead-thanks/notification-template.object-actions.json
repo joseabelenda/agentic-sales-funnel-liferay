@@ -1,0 +1,18 @@
+[
+	{
+		"active": true,
+		"conditionExpression": "triageStatus == \"rejected\"",
+		"externalReferenceCode": "DEVCON_LEAD_EMAIL_THANKS",
+		"label": {
+			"en_US": "Email a Thank You"
+		},
+		"name": "emailThanks",
+		"objectActionExecutorKey": "notification",
+		"objectActionTriggerKey": "onAfterUpdate",
+		"objectDefinitionId": "[$OBJECT_DEFINITION_ID:DevconLead$]",
+		"parameters": {
+			"notificationTemplateExternalReferenceCode": "DEVCON_LEAD_THANKS_EMAIL",
+			"type": "email"
+		}
+	}
+]

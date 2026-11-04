@@ -1,0 +1,38 @@
+services:
+    database:
+        environment:
+            POSTGRES_DB: lportal
+            POSTGRES_PASSWORD: test
+            POSTGRES_USER: liferay
+        image: postgres:16.13
+        ports:
+            -   "5432:5432"
+
+    liferay:
+        depends_on:
+            -   database
+            -   mailpit
+        environment:
+            # Lead emails go to Mailpit locally, never to real inboxes: http://localhost:8025
+            LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL: "true"
+            LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_SMTP_PERIOD_HOST: mailpit
+            LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_SMTP_PERIOD_PORT: "1025"
+            LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_TRANSPORT_PERIOD_PROTOCOL: smtp
+            LIFERAY_PASSWORDS_PERIOD_DEFAULT_PERIOD_POLICY_PERIOD_CHANGEABLE: "true"
+            LIFERAY_PASSWORDS_PERIOD_DEFAULT_PERIOD_POLICY_PERIOD_CHANGE_PERIOD_REQUIRED: "false"
+            # Local only: accept any host name, so a phone on the same network can open the site by
+            # the Mac's IP address. By default only localhost is valid and anything else gets a 500.
+            LIFERAY_VIRTUAL_PERIOD_HOSTS_PERIOD_VALID_PERIOD_HOSTS: "*"
+        image: liferay/dxp:7.4.13-u153
+        ports:
+            -   "8080:8080"
+            -   "11311:11311"
+        volumes:
+            -   ./bundles/deploy:/mnt/liferay/deploy
+            -   ./bundles/files:/mnt/liferay/files
+
+    mailpit:
+        image: axllent/mailpit:v1.27
+        ports:
+            -   "1025:1025"
+            -   "8025:8025"

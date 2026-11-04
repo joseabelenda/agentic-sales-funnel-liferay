@@ -1,0 +1,18 @@
+[
+	{
+		"active": true,
+		"conditionExpression": "triageStatus == \"channelOpened\"",
+		"externalReferenceCode": "DEVCON_LEAD_EMAIL_OUTREACH",
+		"label": {
+			"en_US": "Email the Outreach"
+		},
+		"name": "emailOutreach",
+		"objectActionExecutorKey": "notification",
+		"objectActionTriggerKey": "onAfterUpdate",
+		"objectDefinitionId": "[$OBJECT_DEFINITION_ID:DevconLead$]",
+		"parameters": {
+			"notificationTemplateExternalReferenceCode": "DEVCON_LEAD_OUTREACH_EMAIL",
+			"type": "email"
+		}
+	}
+]

@@ -1,0 +1,71 @@
+<section class="devcon-board">
+	<div class="devcon-board__top">
+		<div>
+			<p class="devcon-board__eyebrow" data-lfr-editable-id="eyebrow" data-lfr-editable-type="text">Live demo · the room</p>
+
+			<h1 class="devcon-board__title" data-lfr-editable-id="title" data-lfr-editable-type="text">Your leads, live</h1>
+		</div>
+
+		<div class="devcon-board__total">
+			<span class="devcon-board__total-number" data-board-total>0</span>
+
+			<span class="devcon-board__total-label">leads received</span>
+
+			<span class="devcon-board__live" data-board-live>
+				<span class="devcon-board__live-dot"></span>
+
+				<span data-board-updated>Connecting…</span>
+			</span>
+		</div>
+
+		<figure class="devcon-board__qr" data-board-qr>
+			<img alt="QR code to the lead form" class="devcon-board__qr-image" data-lfr-editable-id="qr-code" data-lfr-editable-type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApAQAAAACAGz1bAAABJElEQVR42lXQzyuDcQAH4M/306u2xou4jFfrXaJGcrCSiBJpTkv5EasdlpMcXJR2eGkHB+1iNSf1lqS42EnKsoscdhIOm1Z7mV022ms2hDl7/oRH1ABgkwAAMDG+USDo6HV2BkGz0nN1DcL01gOEOT8FUP5s2x8Es63JcAgcXev2/IIZT4dbBotGaj0OWhsu/QpEPnm3a/FJzbGaW4X4KMRsfadM+aOWM7DFu3fbBHyr1VlVE+Xz9pL1gqnAztwD2HViPyyDtviQHoF4qhwrXznJNvJeDIHpFSMaBivP6rAMiZOv06sl8eabqU7ownw5ktONvHctGwcQtZtH4dKZ2FqEBjocA1oANHP9+TEQzlzEBaLux+oBZdO+sARmM8p2BuJfyB8uBWKUzkbnNQAAAABJRU5ErkJggg==" />
+
+			<figcaption class="devcon-board__qr-caption" data-lfr-editable-id="qr-caption" data-lfr-editable-type="text">Scan to send a lead</figcaption>
+		</figure>
+	</div>
+
+	<p class="devcon-board__message" data-board-message hidden></p>
+
+	<ol class="devcon-board__statuses">
+		<li class="devcon-board__status devcon-board__status--thinking">
+			<span class="devcon-board__status-number" data-board-count="thinking">0</span>
+
+			<span class="devcon-board__status-label">AI Hub thinking</span>
+		</li>
+		<li class="devcon-board__status devcon-board__status--qualified">
+			<span class="devcon-board__status-number" data-board-count="qualified">0</span>
+
+			<span class="devcon-board__status-label">Qualified</span>
+		</li>
+		<li class="devcon-board__status devcon-board__status--channel-opened">
+			<span class="devcon-board__status-number" data-board-count="channelOpened">0</span>
+
+			<span class="devcon-board__status-label">Channel opened</span>
+		</li>
+		<li class="devcon-board__status devcon-board__status--rejected">
+			<span class="devcon-board__status-number" data-board-count="rejected">0</span>
+
+			<span class="devcon-board__status-label">Declined</span>
+		</li>
+		<li class="devcon-board__status devcon-board__status--failed">
+			<span class="devcon-board__status-number" data-board-count="failed">0</span>
+
+			<span class="devcon-board__status-label">Stopped</span>
+		</li>
+	</ol>
+
+	<div class="devcon-board__body">
+		<ul class="devcon-board__cards" data-board-cards></ul>
+
+		<aside class="devcon-board__segments">
+			<h2 class="devcon-board__segments-title" data-lfr-editable-id="segments-title" data-lfr-editable-type="text">By segment</h2>
+
+			<ul class="devcon-board__bars" data-board-bars></ul>
+
+			<p class="devcon-board__average">
+				Average fit score <strong data-board-average>–</strong>
+			</p>
+		</aside>
+	</div>
+</section>

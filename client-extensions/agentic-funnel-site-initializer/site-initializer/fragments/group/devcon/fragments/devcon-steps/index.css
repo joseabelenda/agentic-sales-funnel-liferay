@@ -1,0 +1,62 @@
+.devcon-steps {
+	background-color: #00072b;
+	color: #fff;
+	overflow: hidden;
+	padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 4rem);
+	position: relative;
+}
+
+.devcon-steps__art {
+	height: 100%;
+	inset: 0;
+	object-fit: cover;
+	object-position: right center;
+	opacity: 0.35;
+	position: absolute;
+	width: 100%;
+}
+
+.devcon-steps__content {
+	margin: 0 auto;
+	max-width: 72rem;
+	position: relative;
+}
+
+.devcon-steps__title {
+	color: #fff;
+	font-size: clamp(1.75rem, 4vw, 2.75rem);
+	font-weight: 900;
+	margin-bottom: 2.5rem;
+}
+
+.devcon-steps__list {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.devcon-steps__number {
+	color: #e500bd;
+	display: block;
+	font-size: 3.5rem;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 0.75rem;
+}
+
+.devcon-steps__heading {
+	color: #fff;
+	font-size: 1.375rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.devcon-steps__text {
+	color: rgba(255, 255, 255, 0.78);
+	font-size: 1.0625rem;
+	line-height: 1.45;
+	margin: 0;
+}

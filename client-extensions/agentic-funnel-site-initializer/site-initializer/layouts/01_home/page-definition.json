@@ -1,0 +1,253 @@
+{
+	"pageElement": {
+		"pageElements": [
+			{
+				"definition": {
+					"fragment": {
+						"key": "devcon-hero",
+						"siteKey": "[$GROUP_KEY$]"
+					},
+					"fragmentConfig": {},
+					"fragmentFields": [],
+					"indexed": true
+				},
+				"type": "Fragment"
+			},
+			{
+				"definition": {
+					"fragment": {
+						"key": "devcon-form-card",
+						"siteKey": "[$GROUP_KEY$]"
+					},
+					"fragmentConfig": {},
+					"fragmentFields": [],
+					"indexed": true
+				},
+				"type": "Fragment",
+				"pageElements": [
+					{
+						"definition": {},
+						"pageElements": [
+							{
+								"definition": {
+									"formConfig": {
+										"formReference": {
+											"className": "[$OBJECT_DEFINITION_CLASS_NAME:DevconLead$]",
+											"classType": 0
+										},
+										"formSuccessSubmissionResult": {
+											"message": {
+												"value_i18n": {
+													"en_US": "Thanks! Your lead is on its way to the AI Hub. Watch the screen."
+												}
+											},
+											"messageType": "Embedded"
+										},
+										"formType": "simple",
+										"numberOfSteps": 0
+									},
+									"indexed": true,
+									"layout": {}
+								},
+								"pageElements": [
+									{
+										"definition": {
+											"fragment": {
+												"key": "INPUTS-text-input"
+											},
+											"fragmentConfig": {
+												"inputFieldId": "ObjectField_companyName",
+												"inputLabel": {
+													"en_US": "Company"
+												},
+												"inputShowLabel": true,
+												"placeholder": "Where do you work?"
+											},
+											"fragmentFields": [],
+											"fragmentStyle": {
+												"marginBottom": "4"
+											},
+											"indexed": true
+										},
+										"type": "Fragment"
+									},
+									{
+										"definition": {
+											"fragment": {
+												"key": "INPUTS-text-input"
+											},
+											"fragmentConfig": {
+												"inputFieldId": "ObjectField_contactName",
+												"inputLabel": {
+													"en_US": "Your name"
+												},
+												"inputShowLabel": true
+											},
+											"fragmentFields": [],
+											"fragmentStyle": {
+												"marginBottom": "4"
+											},
+											"indexed": true
+										},
+										"type": "Fragment"
+									},
+									{
+										"definition": {
+											"fragment": {
+												"key": "INPUTS-text-input"
+											},
+											"fragmentConfig": {
+												"inputFieldId": "ObjectField_contactEmail",
+												"inputLabel": {
+													"en_US": "Email"
+												},
+												"inputShowLabel": true,
+												"placeholder": "you@company.com"
+											},
+											"fragmentFields": [],
+											"fragmentStyle": {
+												"marginBottom": "4"
+											},
+											"indexed": true
+										},
+										"type": "Fragment"
+									},
+									{
+										"definition": {
+											"fragment": {
+												"key": "INPUTS-select-from-list"
+											},
+											"fragmentConfig": {
+												"inputFieldId": "ObjectField_industry",
+												"inputLabel": {
+													"en_US": "Industry"
+												},
+												"inputShowLabel": true
+											},
+											"fragmentFields": [],
+											"fragmentStyle": {
+												"marginBottom": "4"
+											},
+											"indexed": true
+										},
+										"type": "Fragment"
+									},
+									{
+										"definition": {
+											"fragment": {
+												"key": "INPUTS-numeric-input"
+											},
+											"fragmentConfig": {
+												"inputFieldId": "ObjectField_employeeCount",
+												"inputLabel": {
+													"en_US": "How many people work there?"
+												},
+												"inputShowLabel": true
+											},
+											"fragmentFields": [],
+											"fragmentStyle": {
+												"marginBottom": "4"
+											},
+											"indexed": true
+										},
+										"type": "Fragment"
+									},
+									{
+										"definition": {
+											"fragment": {
+												"key": "INPUTS-textarea"
+											},
+											"fragmentConfig": {
+												"inputFieldId": "ObjectField_rawNotes",
+												"inputLabel": {
+													"en_US": "What are you trying to solve?"
+												},
+												"inputShowLabel": true,
+												"numberOfLines": "4",
+												"placeholder": "Two sentences is plenty."
+											},
+											"fragmentFields": [],
+											"fragmentStyle": {
+												"marginBottom": "4"
+											},
+											"indexed": true
+										},
+										"type": "Fragment"
+									},
+									{
+										"definition": {
+											"fragment": {
+												"key": "INPUTS-checkbox"
+											},
+											"fragmentConfig": {
+												"inputFieldId": "ObjectField_consent",
+												"inputLabel": {
+													"en_US": "I agree that my details are processed for this live demo, including one email to me, and deleted after the session"
+												},
+												"inputShowLabel": true
+											},
+											"fragmentFields": [],
+											"fragmentStyle": {
+												"marginBottom": "4"
+											},
+											"indexed": true
+										},
+										"type": "Fragment"
+									},
+									{
+										"definition": {
+											"fragment": {
+												"key": "INPUTS-submit-button"
+											},
+											"fragmentConfig": {
+												"buttonSize": "lg",
+												"buttonType": "primary",
+												"submittedEntryStatus": "approved"
+											},
+											"fragmentFields": [
+												{
+													"id": "submit-button-text",
+													"value": {
+														"fragmentLink": {},
+														"text": {
+															"value_i18n": {
+																"en_US": "Send my lead"
+															}
+														}
+													}
+												}
+											],
+											"indexed": true
+										},
+										"type": "Fragment"
+									}
+								],
+								"type": "Form"
+							}
+						],
+						"type": "FragmentDropZone"
+					}
+				]
+			},
+			{
+				"definition": {
+					"fragment": {
+						"key": "devcon-steps",
+						"siteKey": "[$GROUP_KEY$]"
+					},
+					"fragmentConfig": {},
+					"fragmentFields": [],
+					"indexed": true
+				},
+				"type": "Fragment"
+			}
+		],
+		"type": "Root"
+	},
+	"settings": {
+		"masterPage": {
+			"key": "devcon"
+		}
+	},
+	"version": 1.0
+}

@@ -1,0 +1,29 @@
+.devcon-header {
+	align-items: center;
+	background-color: #00072b;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	padding: 1.25rem clamp(1rem, 5vw, 4rem);
+}
+
+.devcon-header__logo {
+	height: clamp(1.5rem, 4vw, 2.25rem);
+	width: auto;
+}
+
+.devcon-header__tag {
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: 999px;
+	color: #fff;
+	font-size: 0.875rem;
+	font-weight: 600;
+	padding: 0.35rem 0.9rem;
+	white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+	.devcon-header__tag {
+		display: none;
+	}
+}

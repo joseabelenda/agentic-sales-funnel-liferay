@@ -1,0 +1,322 @@
+{
+	"active": true,
+	"enableCategorization": false,
+	"enableComments": false,
+	"enableObjectEntryHistory": true,
+	"externalReferenceCode": "DEVCON_LEAD",
+	"label": {
+		"en_US": "Lead"
+	},
+	"name": "DevconLead",
+	"objectFields": [
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_LEAD_COMPANY_NAME",
+			"indexed": true,
+			"indexedAsKeyword": true,
+			"label": {
+				"en_US": "Company Name"
+			},
+			"name": "companyName",
+			"required": true,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_LEAD_CONTACT_NAME",
+			"indexed": true,
+			"label": {
+				"en_US": "Contact Name"
+			},
+			"name": "contactName",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_LEAD_CONTACT_EMAIL",
+			"indexed": true,
+			"indexedAsKeyword": true,
+			"label": {
+				"en_US": "Contact Email"
+			},
+			"name": "contactEmail",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Picklist",
+			"externalReferenceCode": "DEVCON_LEAD_INDUSTRY",
+			"indexed": true,
+			"label": {
+				"en_US": "Industry"
+			},
+			"listTypeDefinitionExternalReferenceCode": "DEVCON_LEAD_INDUSTRIES",
+			"name": "industry",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "Integer",
+			"businessType": "Integer",
+			"externalReferenceCode": "DEVCON_LEAD_EMPLOYEE_COUNT",
+			"indexed": true,
+			"label": {
+				"en_US": "Employee Count"
+			},
+			"name": "employeeCount",
+			"required": false,
+			"type": "Integer"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Picklist",
+			"externalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNEL",
+			"indexed": true,
+			"label": {
+				"en_US": "Source Channel"
+			},
+			"listTypeDefinitionExternalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNELS",
+			"name": "sourceChannel",
+			"objectFieldSettings": [
+				{
+					"name": "defaultValueType",
+					"value": "inputAsValue"
+				},
+				{
+					"name": "defaultValue",
+					"value": "webForm"
+				}
+			],
+			"required": false,
+			"type": "String",
+			"defaultValue": "webForm"
+		},
+		{
+			"DBType": "Clob",
+			"businessType": "LongText",
+			"externalReferenceCode": "DEVCON_LEAD_RAW_NOTES",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Raw Notes"
+			},
+			"name": "rawNotes",
+			"required": false,
+			"type": "Clob"
+		},
+		{
+			"DBType": "Boolean",
+			"businessType": "Boolean",
+			"externalReferenceCode": "DEVCON_LEAD_CONSENT",
+			"indexed": false,
+			"label": {
+				"en_US": "I agree that my details are processed for this live demo, including one email to me, and deleted after the session"
+			},
+			"name": "consent",
+			"required": true,
+			"type": "Boolean"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Picklist",
+			"externalReferenceCode": "DEVCON_LEAD_SEGMENT",
+			"indexed": true,
+			"label": {
+				"en_US": "Segment"
+			},
+			"listTypeDefinitionExternalReferenceCode": "DEVCON_LEAD_SEGMENTS",
+			"name": "segment",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "Integer",
+			"businessType": "Integer",
+			"externalReferenceCode": "DEVCON_LEAD_FIT_SCORE",
+			"indexed": true,
+			"label": {
+				"en_US": "Fit Score"
+			},
+			"name": "fitScore",
+			"required": false,
+			"type": "Integer"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_LEAD_CONFIDENCE",
+			"indexed": true,
+			"label": {
+				"en_US": "Confidence"
+			},
+			"name": "confidence",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "Clob",
+			"businessType": "LongText",
+			"externalReferenceCode": "DEVCON_LEAD_CLASSIFICATION_RATIONALE",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Classification Rationale"
+			},
+			"name": "classificationRationale",
+			"required": false,
+			"type": "Clob"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_LEAD_OUTREACH_SUBJECT",
+			"indexed": true,
+			"label": {
+				"en_US": "Outreach Subject"
+			},
+			"name": "outreachSubject",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "Clob",
+			"businessType": "LongText",
+			"externalReferenceCode": "DEVCON_LEAD_OUTREACH_BODY",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Outreach Body"
+			},
+			"name": "outreachBody",
+			"required": false,
+			"type": "Clob"
+		},
+		{
+			"DBType": "Clob",
+			"businessType": "LongText",
+			"externalReferenceCode": "DEVCON_LEAD_REVIEW_NOTES",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Agent Notes"
+			},
+			"name": "reviewNotes",
+			"required": false,
+			"type": "Clob"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Picklist",
+			"externalReferenceCode": "DEVCON_LEAD_TRIAGE_STATUS",
+			"indexed": true,
+			"label": {
+				"en_US": "Triage Status"
+			},
+			"listTypeDefinitionExternalReferenceCode": "DEVCON_LEAD_TRIAGE_STATUSES",
+			"name": "triageStatus",
+			"required": false,
+			"type": "String",
+			"defaultValue": "new",
+			"objectFieldSettings": [
+				{
+					"name": "defaultValueType",
+					"value": "inputAsValue"
+				},
+				{
+					"name": "defaultValue",
+					"value": "new"
+				}
+			]
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_LEAD_CLASSIFIER_INSTANCE_ID",
+			"indexed": true,
+			"indexedAsKeyword": true,
+			"label": {
+				"en_US": "Classifier Agent Instance ID"
+			},
+			"name": "classifierAgentInstanceId",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_LEAD_OUTREACH_INSTANCE_ID",
+			"indexed": true,
+			"indexedAsKeyword": true,
+			"label": {
+				"en_US": "Outreach Agent Instance ID"
+			},
+			"name": "outreachAgentInstanceId",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_LEAD_CHANNEL_URL",
+			"indexed": true,
+			"label": {
+				"en_US": "Channel URL"
+			},
+			"name": "channelURL",
+			"required": false,
+			"type": "String"
+		},
+		{
+			"DBType": "Clob",
+			"businessType": "LongText",
+			"externalReferenceCode": "DEVCON_LEAD_ERROR_MESSAGE",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Error Message"
+			},
+			"name": "errorMessage",
+			"required": false,
+			"type": "Clob"
+		}
+	],
+	"objectValidationRules": [
+		{
+			"active": true,
+			"engine": "ddm",
+			"errorLabel": {
+				"en_US": "Please enter a number of people that is zero or more."
+			},
+			"name": {
+				"en_US": "Employee Count Not Negative"
+			},
+			"outputType": "fullValidation",
+			"script": "isEmpty(employeeCount) OR employeeCount >= 0"
+		},
+		{
+			"active": true,
+			"engine": "ddm",
+			"errorLabel": {
+				"en_US": "Please enter a valid email address."
+			},
+			"name": {
+				"en_US": "Contact Email Valid"
+			},
+			"outputType": "fullValidation",
+			"script": "isEmailAddress(contactEmail) OR contactEmail == \"\""
+		}
+	],
+	"panelCategoryKey": "control_panel.object",
+	"pluralLabel": {
+		"en_US": "Leads"
+	},
+	"portlet": true,
+	"scope": "company",
+	"titleObjectFieldName": "companyName",
+	"updateStrategy": "UPDATE"
+}

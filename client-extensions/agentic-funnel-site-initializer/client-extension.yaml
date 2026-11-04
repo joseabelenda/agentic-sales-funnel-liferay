@@ -1,0 +1,20 @@
+# Sets up everything the demo needs on deploy: the triage picklists, the Lead object with both Object
+# Actions, and the demo site in the DEVCON '26 look and feel (style book, master page, fragments), with
+# the home page's lead form mapped to the Lead object and Guest permission to add leads.
+#
+# Deploy agentic-funnel-etc-spring-boot first: the Object Actions point at its endpoints. The brand
+# images are not versioned; see the README.
+agentic-funnel-site-initializer:
+    name: Agentic Funnel Site Initializer
+    oAuthApplicationHeadlessServer: agentic-funnel-site-initializer-oahs
+    siteExternalReferenceCode: DEVCON_AGENTIC_FUNNEL
+    siteName: DEVCON 2026 Lead
+    type: siteInitializer
+
+agentic-funnel-site-initializer-oahs:
+    .serviceAddress: localhost:8080
+    .serviceScheme: http
+    name: Agentic Funnel Site Initializer OAuth Application Headless Server
+    scopes:
+        -   Liferay.Headless.Site.everything
+    type: oAuthApplicationHeadlessServer

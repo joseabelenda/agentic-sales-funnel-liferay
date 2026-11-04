@@ -1,0 +1,90 @@
+{
+	"bodyBgColor": {
+		"cssVariableMapping": "body-bg",
+		"value": "#00072B"
+	},
+	"bodyColor": {
+		"cssVariableMapping": "body-color",
+		"value": "#FFFFFF"
+	},
+	"borderRadius": {
+		"cssVariableMapping": "border-radius",
+		"value": "0.75rem"
+	},
+	"borderRadiusLg": {
+		"cssVariableMapping": "border-radius-lg",
+		"value": "1.5rem"
+	},
+	"brandColor1": {
+		"cssVariableMapping": "brand-color-1",
+		"value": "#E500BD"
+	},
+	"brandColor2": {
+		"cssVariableMapping": "brand-color-2",
+		"value": "#0965FD"
+	},
+	"btnPrimaryBackgroundColor": {
+		"cssVariableMapping": "btn-primary-background-color",
+		"value": "#E500BD"
+	},
+	"btnPrimaryBorderColor": {
+		"cssVariableMapping": "btn-primary-border-color",
+		"value": "transparent"
+	},
+	"btnPrimaryColor": {
+		"cssVariableMapping": "btn-primary-color",
+		"value": "#FFFFFF"
+	},
+	"btnPrimaryHoverBackgroundColor": {
+		"cssVariableMapping": "btn-primary-hover-background-color",
+		"value": "#C400A2"
+	},
+	"btnPrimaryHoverBorderColor": {
+		"cssVariableMapping": "btn-primary-hover-border-color",
+		"value": "transparent"
+	},
+	"btnPrimaryHoverColor": {
+		"cssVariableMapping": "btn-primary-hover-color",
+		"value": "#FFFFFF"
+	},
+	"fontFamilyBase": {
+		"cssVariableMapping": "font-family-base",
+		"value": "'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+	},
+	"fontFamilySansSerif": {
+		"cssVariableMapping": "font-family-sans-serif",
+		"value": "'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+	},
+	"primaryColor": {
+		"cssVariableMapping": "primary",
+		"value": "#E500BD"
+	},
+	"primaryD1Color": {
+		"cssVariableMapping": "primary-d1",
+		"value": "#C400A2"
+	},
+	"primaryD2Color": {
+		"cssVariableMapping": "primary-d2",
+		"value": "#A30087"
+	},
+	"primaryL0Color": {
+		"cssVariableMapping": "primary-l0",
+		"value": "#F04DD3"
+	},
+	"primaryL1Color": {
+		"cssVariableMapping": "primary-l1",
+		"value": "#F580E0"
+	},
+	"primaryL2Color": {
+		"cssVariableMapping": "primary-l2",
+		"value": "#FAB3EC"
+	},
+	"primaryL3Color": {
+		"cssVariableMapping": "primary-l3",
+		"value": "#FDEBF9"
+	},
+	"secondaryColor": {
+		"cssVariableMapping": "secondary",
+		"value": "#0965FD"
+	}
+}

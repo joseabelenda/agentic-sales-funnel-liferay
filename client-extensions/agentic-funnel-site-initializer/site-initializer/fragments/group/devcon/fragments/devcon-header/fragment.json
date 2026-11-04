@@ -1,0 +1,7 @@
+{
+	"cssPath": "index.css",
+	"htmlPath": "index.html",
+	"icon": "square-hole",
+	"name": "Header",
+	"type": "component"
+}

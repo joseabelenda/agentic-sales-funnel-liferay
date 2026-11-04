@@ -1,0 +1,11 @@
+{
+	"active": true,
+	"description": "Writes the first outreach message to a qualified lead, from the lead, its classification and the sender's profile.",
+	"externalReferenceCode": "DEVCON_LEAD_OUTREACH",
+	"inputVariables": "classificationJSON,leadJSON,leadReference,senderProfile",
+	"outputVariable": "outreachDraft",
+	"title_i18n": {
+		"en_US": "DEVCON Lead Outreach"
+	},
+	"workflowDefinitionName": "DEVCON Lead Outreach"
+}

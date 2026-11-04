@@ -1,0 +1,92 @@
+.devcon-form {
+	background:
+		radial-gradient(60rem 30rem at 0% 0%, rgba(9, 101, 253, 0.45), transparent 60%),
+		radial-gradient(50rem 30rem at 100% 100%, rgba(229, 0, 189, 0.45), transparent 60%),
+		#00072b;
+	padding: clamp(2.5rem, 8vw, 5rem) clamp(1rem, 5vw, 4rem);
+	scroll-margin-top: 1rem;
+}
+
+.devcon-form__card {
+	background-color: #fff;
+	border-radius: 1.5rem;
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35);
+	color: #1c1c24;
+	margin: 0 auto;
+	max-width: 42rem;
+	padding: clamp(1.5rem, 5vw, 3rem);
+}
+
+.devcon-form__title {
+	color: #00072b;
+	font-size: clamp(1.75rem, 4vw, 2.25rem);
+	font-weight: 900;
+	margin-bottom: 0.5rem;
+}
+
+.devcon-form__intro {
+	color: #4b4f68;
+	font-size: 1.0625rem;
+	margin-bottom: 1.75rem;
+}
+
+/* The form inputs dropped inside the card */
+
+.devcon-form__card label,
+.devcon-form__card .form-check-label,
+.devcon-form__card p {
+	color: #1c1c24;
+}
+
+.devcon-form__card label {
+	font-weight: 600;
+}
+
+.devcon-form__card .form-control,
+.devcon-form__card textarea {
+	background-color: #fff;
+	border: 1px solid #d5d7e3;
+	border-radius: 0.75rem;
+	color: #1c1c24;
+	font-size: 1rem;
+	min-height: 3rem;
+	padding: 0.65rem 0.9rem;
+}
+
+.devcon-form__card .form-control:focus,
+.devcon-form__card textarea:focus {
+	border-color: #e500bd;
+	box-shadow: 0 0 0 0.2rem rgba(229, 0, 189, 0.2);
+}
+
+/* Select from list: the input and its toggle button read as one control */
+
+.devcon-form__card .input-group .form-control {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.devcon-form__card .input-group button {
+	background-color: #fff;
+	border: 1px solid #d5d7e3;
+	border-bottom-right-radius: 0.75rem;
+	border-left: 0;
+	border-top-right-radius: 0.75rem;
+	color: #4b4f68;
+	min-height: 3rem;
+}
+
+.devcon-form__card .input-group:focus-within .form-control,
+.devcon-form__card .input-group:focus-within button {
+	border-color: #e500bd;
+}
+
+.devcon-form__card .btn-primary {
+	background: linear-gradient(90deg, #e500bd 0%, #7214ff 100%);
+	border: 0;
+	border-radius: 999px;
+	font-size: 1.125rem;
+	font-weight: 700;
+	min-height: 3.25rem;
+	width: 100%;
+}

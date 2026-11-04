@@ -1,0 +1,58 @@
+[
+	{
+		"externalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNELS_WEBFORM",
+		"key": "webForm",
+		"name": "Web Form",
+		"name_i18n": {
+			"en_US": "Web Form"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNELS_INSTAGRAM",
+		"key": "instagram",
+		"name": "Instagram Campaign",
+		"name_i18n": {
+			"en_US": "Instagram Campaign"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNELS_WHATSAPP",
+		"key": "whatsapp",
+		"name": "WhatsApp",
+		"name_i18n": {
+			"en_US": "WhatsApp"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNELS_CRM",
+		"key": "crm",
+		"name": "CRM or Marketing Automation",
+		"name_i18n": {
+			"en_US": "CRM or Marketing Automation"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNELS_EVENT",
+		"key": "event",
+		"name": "Event",
+		"name_i18n": {
+			"en_US": "Event"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNELS_REFERRAL",
+		"key": "referral",
+		"name": "Referral",
+		"name_i18n": {
+			"en_US": "Referral"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_SOURCE_CHANNELS_PARTNER",
+		"key": "partner",
+		"name": "Partner",
+		"name_i18n": {
+			"en_US": "Partner"
+		}
+	}
+]

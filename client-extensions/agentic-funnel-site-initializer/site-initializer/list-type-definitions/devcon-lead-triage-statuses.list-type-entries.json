@@ -1,0 +1,50 @@
+[
+	{
+		"externalReferenceCode": "DEVCON_LEAD_TRIAGE_STATUSES_NEW",
+		"key": "new",
+		"name": "New",
+		"name_i18n": {
+			"en_US": "New"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_TRIAGE_STATUSES_TRIAGING",
+		"key": "triaging",
+		"name": "Triaging",
+		"name_i18n": {
+			"en_US": "Triaging"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_TRIAGE_STATUSES_QUALIFIED",
+		"key": "qualified",
+		"name": "Qualified",
+		"name_i18n": {
+			"en_US": "Qualified"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_TRIAGE_STATUSES_REJECTED",
+		"key": "rejected",
+		"name": "Rejected",
+		"name_i18n": {
+			"en_US": "Rejected"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_TRIAGE_STATUSES_CHANNELOPENED",
+		"key": "channelOpened",
+		"name": "Channel Opened",
+		"name_i18n": {
+			"en_US": "Channel Opened"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_TRIAGE_STATUSES_FAILED",
+		"key": "failed",
+		"name": "Failed",
+		"name_i18n": {
+			"en_US": "Failed"
+		}
+	}
+]

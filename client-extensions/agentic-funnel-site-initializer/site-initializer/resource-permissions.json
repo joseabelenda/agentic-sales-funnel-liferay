@@ -1,0 +1,11 @@
+[
+	{
+		"actionIds": [
+			"ADD_OBJECT_ENTRY"
+		],
+		"primKey": "0",
+		"resourceName": "com.liferay.object#[$OBJECT_DEFINITION_ID:DevconLead$]",
+		"roleName": "Guest",
+		"scope": "1"
+	}
+]

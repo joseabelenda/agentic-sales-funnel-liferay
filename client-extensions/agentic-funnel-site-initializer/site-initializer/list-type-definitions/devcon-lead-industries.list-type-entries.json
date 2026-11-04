@@ -1,0 +1,82 @@
+[
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_FINANCIALSERVICES",
+		"key": "financialServices",
+		"name": "Financial services",
+		"name_i18n": {
+			"en_US": "Financial services"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_INSURANCE",
+		"key": "insurance",
+		"name": "Insurance",
+		"name_i18n": {
+			"en_US": "Insurance"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_HEALTHCARE",
+		"key": "healthcare",
+		"name": "Healthcare",
+		"name_i18n": {
+			"en_US": "Healthcare"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_PUBLICSECTOR",
+		"key": "publicSector",
+		"name": "Public sector",
+		"name_i18n": {
+			"en_US": "Public sector"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_MANUFACTURING",
+		"key": "manufacturing",
+		"name": "Manufacturing",
+		"name_i18n": {
+			"en_US": "Manufacturing"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_HIGHEREDUCATION",
+		"key": "higherEducation",
+		"name": "Higher education",
+		"name_i18n": {
+			"en_US": "Higher education"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_RETAIL",
+		"key": "retail",
+		"name": "Retail and commerce",
+		"name_i18n": {
+			"en_US": "Retail and commerce"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_SOFTWAREIT",
+		"key": "softwareIt",
+		"name": "Software and IT services",
+		"name_i18n": {
+			"en_US": "Software and IT services"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_CONSULTING",
+		"key": "consulting",
+		"name": "Consulting or Liferay partner",
+		"name_i18n": {
+			"en_US": "Consulting or Liferay partner"
+		}
+	},
+	{
+		"externalReferenceCode": "DEVCON_LEAD_INDUSTRIES_OTHER",
+		"key": "other",
+		"name": "Other",
+		"name_i18n": {
+			"en_US": "Other"
+		}
+	}
+]

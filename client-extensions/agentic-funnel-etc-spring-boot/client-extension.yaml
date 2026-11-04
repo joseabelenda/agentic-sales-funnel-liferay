@@ -1,0 +1,28 @@
+assemble:
+    -   fromTask: bootJar
+agentic-funnel-etc-spring-boot-oahs:
+    .serviceAddress: agentic-funnel-etc-spring-boot.example.com
+    .serviceScheme: https
+    name: Agentic Funnel Etc Spring Boot OAuth Application Headless Server
+    scopes:
+        -   C_DevconChannel.everything
+        -   C_DevconLead.everything
+    type: oAuthApplicationHeadlessServer
+
+agentic-funnel-etc-spring-boot-oaua:
+    .serviceAddress: agentic-funnel-etc-spring-boot.example.com
+    .serviceScheme: https
+    name: Agentic Funnel Etc Spring Boot OAuth Application User Agent
+    type: oAuthApplicationUserAgent
+
+agentic-funnel-etc-object-action-triage-lead:
+    name: Agentic Funnel Object Action Triage Lead
+    oAuth2ApplicationExternalReferenceCode: agentic-funnel-etc-spring-boot-oaua
+    resourcePath: /object/action/triage-lead
+    type: objectAction
+
+agentic-funnel-etc-object-action-open-channel:
+    name: Agentic Funnel Object Action Open Channel
+    oAuth2ApplicationExternalReferenceCode: agentic-funnel-etc-spring-boot-oaua
+    resourcePath: /object/action/open-channel
+    type: objectAction

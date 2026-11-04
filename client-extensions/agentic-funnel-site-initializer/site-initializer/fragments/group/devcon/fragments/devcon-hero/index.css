@@ -1,0 +1,89 @@
+.devcon-hero {
+	background-color: #00072b;
+	color: #fff;
+	min-height: clamp(30rem, 75vh, 44rem);
+	overflow: hidden;
+	position: relative;
+}
+
+/* The template's 3D artwork, already lit in DEVCON blue and magenta */
+
+.devcon-hero__art {
+	height: 100%;
+	inset: 0;
+	object-fit: cover;
+	object-position: right center;
+	position: absolute;
+	width: 100%;
+}
+
+.devcon-hero::after {
+	background: linear-gradient(90deg, #00072b 0%, rgba(0, 7, 43, 0.85) 45%, rgba(0, 7, 43, 0) 75%);
+	content: "";
+	inset: 0;
+	position: absolute;
+}
+
+.devcon-hero__content {
+	max-width: 40rem;
+	padding: clamp(3rem, 10vh, 7rem) clamp(1rem, 5vw, 4rem);
+	position: relative;
+	z-index: 1;
+}
+
+.devcon-hero__eyebrow {
+	color: #e500bd;
+	font-size: 1.125rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	margin-bottom: 1rem;
+}
+
+.devcon-hero__title {
+	color: #fff;
+	font-size: clamp(2.5rem, 6vw, 4.5rem);
+	font-weight: 900;
+	line-height: 1.02;
+	margin-bottom: 1.5rem;
+}
+
+.devcon-hero__lead {
+	color: rgba(255, 255, 255, 0.82);
+	font-size: clamp(1.125rem, 2vw, 1.375rem);
+	line-height: 1.45;
+	margin-bottom: 2.25rem;
+}
+
+.devcon-hero__cta {
+	background: linear-gradient(90deg, #e500bd 0%, #7214ff 100%);
+	border-radius: 999px;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.125rem;
+	font-weight: 700;
+	padding: 0.95rem 2.25rem;
+	text-decoration: none;
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.devcon-hero__cta:hover,
+.devcon-hero__cta:focus {
+	box-shadow: 0 0.75rem 2rem rgba(229, 0, 189, 0.45);
+	color: #fff;
+	text-decoration: none;
+	transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+	.devcon-hero {
+		min-height: 0;
+	}
+
+	.devcon-hero::after {
+		background: linear-gradient(180deg, rgba(0, 7, 43, 0.3) 0%, rgba(0, 7, 43, 0.85) 55%, #00072b 100%);
+	}
+
+	.devcon-hero__art {
+		object-position: 70% top;
+	}
+}

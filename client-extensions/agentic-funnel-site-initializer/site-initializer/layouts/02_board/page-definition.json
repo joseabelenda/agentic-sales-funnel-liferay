@@ -1,0 +1,25 @@
+{
+	"pageElement": {
+		"pageElements": [
+			{
+				"definition": {
+					"fragment": {
+						"key": "devcon-leads-board",
+						"siteKey": "[$GROUP_KEY$]"
+					},
+					"fragmentConfig": {},
+					"fragmentFields": [],
+					"indexed": false
+				},
+				"type": "Fragment"
+			}
+		],
+		"type": "Root"
+	},
+	"settings": {
+		"masterPage": {
+			"key": "devcon"
+		}
+	},
+	"version": 1.0
+}

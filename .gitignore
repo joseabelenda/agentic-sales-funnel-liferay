@@ -1,0 +1,9 @@
+.gradle/
+build/
+bundles/
+dist/
+!gradle/wrapper/gradle-wrapper.jar
+.DS_Store
+
+# Kept out of version control on purpose: the brand images
+/client-extensions/agentic-funnel-site-initializer/site-initializer/fragments/group/devcon/resources/brand-*

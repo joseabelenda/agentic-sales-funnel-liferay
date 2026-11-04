@@ -1,0 +1,7 @@
+{
+	"cssPath": "index.css",
+	"htmlPath": "index.html",
+	"icon": "cards2",
+	"name": "Hero",
+	"type": "component"
+}

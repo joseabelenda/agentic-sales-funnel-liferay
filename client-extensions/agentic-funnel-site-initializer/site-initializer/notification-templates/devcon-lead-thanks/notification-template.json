@@ -1,0 +1,24 @@
+{
+	"description": "",
+	"editorType": "richText",
+	"externalReferenceCode": "DEVCON_LEAD_THANKS_EMAIL",
+	"name": "DEVCON Lead Thanks",
+	"recipientType": "email",
+	"recipients": [
+		{
+			"bcc": "",
+			"cc": "",
+			"from": "noreply@liferay.com",
+			"fromName": {
+				"en_US": "DEVCON 2026 Agentic Funnel"
+			},
+			"to": {
+				"en_US": "[%DEVCONLEAD_CONTACTEMAIL%]"
+			}
+		}
+	],
+	"subject": {
+		"en_US": "Thanks for your lead at DEVCON 2026"
+	},
+	"type": "email"
+}

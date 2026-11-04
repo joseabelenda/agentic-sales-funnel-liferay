@@ -1,0 +1,29 @@
+{
+	"cpu": 1,
+	"env": {
+		"COM_LIFERAY_DEVCON_FUNNEL_AI_HUB_CLIENT_ID": "@ai-hub-client-id",
+		"COM_LIFERAY_DEVCON_FUNNEL_AI_HUB_CLIENT_SECRET": "@ai-hub-client-secret",
+		"LIFERAY_ROUTES_DXP": "/etc/liferay/lxc/dxp-metadata",
+		"LIFERAY_ROUTES_CLIENT_EXTENSION": "/etc/liferay/lxc/ext-init-metadata"
+	},
+	"id": "agenticfunneletcspringboot",
+	"kind": "Deployment",
+	"livenessProbe": {
+		"httpGet": {
+			"path": "/ready",
+			"port": 58082
+		},
+		"initialDelaySeconds": 60
+	},
+	"memory": 1024,
+	"readinessProbe": {
+		"httpGet": {
+			"path": "/ready",
+			"port": 58082
+		}
+	},
+	"scale": 1,
+	"loadBalancer": {
+		"targetPort": 58082
+	}
+}

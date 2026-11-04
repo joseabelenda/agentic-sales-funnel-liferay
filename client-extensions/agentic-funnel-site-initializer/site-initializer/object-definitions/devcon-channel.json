@@ -1,0 +1,69 @@
+{
+	"active": true,
+	"enableCategorization": false,
+	"enableComments": false,
+	"enableObjectEntryHistory": true,
+	"externalReferenceCode": "DEVCON_CHANNEL",
+	"label": {
+		"en_US": "Channel"
+	},
+	"name": "DevconChannel",
+	"objectFields": [
+		{
+			"DBType": "String",
+			"businessType": "Text",
+			"externalReferenceCode": "DEVCON_CHANNEL_SUBJECT",
+			"indexed": true,
+			"label": {
+				"en_US": "Subject"
+			},
+			"name": "subject",
+			"required": true,
+			"type": "String"
+		},
+		{
+			"DBType": "Clob",
+			"businessType": "LongText",
+			"externalReferenceCode": "DEVCON_CHANNEL_BODY",
+			"indexed": true,
+			"indexedLanguageId": "en_US",
+			"label": {
+				"en_US": "Body"
+			},
+			"name": "body",
+			"required": false,
+			"type": "Clob"
+		},
+		{
+			"DBType": "String",
+			"businessType": "Picklist",
+			"defaultValue": "open",
+			"externalReferenceCode": "DEVCON_CHANNEL_STATUS",
+			"indexed": true,
+			"label": {
+				"en_US": "Status"
+			},
+			"listTypeDefinitionExternalReferenceCode": "DEVCON_CHANNEL_STATUSES",
+			"name": "channelStatus",
+			"objectFieldSettings": [
+				{
+					"name": "defaultValueType",
+					"value": "inputAsValue"
+				},
+				{
+					"name": "defaultValue",
+					"value": "open"
+				}
+			],
+			"required": false,
+			"type": "String"
+		}
+	],
+	"panelCategoryKey": "control_panel.object",
+	"pluralLabel": {
+		"en_US": "Channels"
+	},
+	"portlet": true,
+	"scope": "company",
+	"titleObjectFieldName": "subject"
+}

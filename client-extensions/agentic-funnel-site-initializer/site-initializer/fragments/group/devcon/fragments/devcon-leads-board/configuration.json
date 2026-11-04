@@ -1,0 +1,28 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "int",
+					"defaultValue": "3",
+					"label": "Refresh every (seconds)",
+					"name": "refreshSeconds",
+					"type": "text"
+				},
+				{
+					"dataType": "int",
+					"defaultValue": "9",
+					"label": "Lead cards shown",
+					"name": "maxCards",
+					"type": "text"
+				},
+				{
+					"defaultValue": true,
+					"label": "Show the QR code to the lead form",
+					"name": "showQrCode",
+					"type": "checkbox"
+				}
+			]
+		}
+	]
+}

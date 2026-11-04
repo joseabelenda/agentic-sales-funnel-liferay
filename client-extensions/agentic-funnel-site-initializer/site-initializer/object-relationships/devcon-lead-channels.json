@@ -1,0 +1,11 @@
+{
+	"deletionType": "cascade",
+	"externalReferenceCode": "DEVCON_LEAD_CHANNELS",
+	"label": {
+		"en_US": "Channels"
+	},
+	"name": "leadChannels",
+	"objectDefinitionId1": "[$OBJECT_DEFINITION_ID:DevconLead$]",
+	"objectDefinitionId2": "[$OBJECT_DEFINITION_ID:DevconChannel$]",
+	"type": "oneToMany"
+}

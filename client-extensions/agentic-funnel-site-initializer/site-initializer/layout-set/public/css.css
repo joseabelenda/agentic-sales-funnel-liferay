@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;900&display=swap");
+
+/* DEVCON '26: navy ground, blue and magenta light */
+
+body {
+	background-color: #00072b;
+	color: #fff;
+	font-family: "Source Sans 3", system-ui, sans-serif;
+}
+
+#wrapper,
+.portlet {
+	margin-bottom: 0;
+	padding: 0;
+}

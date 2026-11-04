@@ -1,0 +1,10 @@
+{
+	"active": true,
+	"externalReferenceCode": "DEVCON_LEAD_CLASSIFIER",
+	"name": "DEVCON Lead Classifier",
+	"scope": "ai",
+	"title": "DEVCON Lead Classifier",
+	"title_i18n": {
+		"en_US": "DEVCON Lead Classifier"
+	}
+}
